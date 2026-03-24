@@ -46,6 +46,7 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 wwwroot\sample-data\weather.json
+wwwroot\appsettings.json
 C:\Users\Sandhya\source\repos\project1\project1\wwwroot\css\app.css
 C:\Users\Sandhya\source\repos\project1\project1\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 C:\Users\Sandhya\source\repos\project1\project1\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -92,3 +93,4 @@ C:\Users\Sandhya\source\repos\project1\project1\wwwroot\lib\bootstrap\dist\js\bo
 C:\Users\Sandhya\source\repos\project1\project1\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 C:\Users\Sandhya\source\repos\project1\project1\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 C:\Users\Sandhya\source\repos\project1\project1\wwwroot\sample-data\weather.json
+C:\Users\Sandhya\source\repos\project1\project1\wwwroot\appsettings.json

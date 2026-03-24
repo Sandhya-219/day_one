@@ -1,0 +1,48 @@
+﻿@page "/comments"
+@using project1.Pages
+@inject HttpClient http
+<h3>Commentspage</h3>
+
+<div class="table">
+    <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Post Id</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (comments == null || comments.Count == 0)
+        {
+            <tr>
+                <td colspan="3">Loading...</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var comment in comments)
+            {
+                <tr>
+                    <td>@comment.postId</td>
+                    <td>@comment.id</td>
+                    <td>@comment.name</td>
+                    <td>@comment.email</td>
+                    <td>@comment.body</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+</div>
+@code {
+    public List<Comments> comments { get; set; } = new List<Comments>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        comments = await http.GetFromJsonAsync<List<Comments>>("Comments");
+    }
+
+}

@@ -1,0 +1,44 @@
+﻿@page "/albums"
+@using project1.Pages
+@inject HttpClient http
+
+<h3>Albumspage</h3>
+
+<div class="table">
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+        <tr>
+            <th>User Id</th>
+            <th>Id</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (albums == null || albums.Count == 0)
+        {
+            <tr>
+                <td colspan="3">Loading...</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var album in albums)
+            {
+                <tr>
+                    <td>@album.userId</td>
+                    <td>@album.id</td>
+                    <td>@album.title</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+</div>
+@code {
+    public List<Albums> albums { get; set; } = new List<Albums>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        albums = await http.GetFromJsonAsync<List<Albums>>("Albums");
+    }
+}

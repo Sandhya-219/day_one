@@ -32,6 +32,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Sandhya/source/repos/project1/project1/Pages/Albumspage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxidW1zcGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sandhya/source/repos/project1/project1/Pages/Commentspage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWVudHNwYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Sandhya/source/repos/project1/project1/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,8 +52,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Sandhya/source/repos/project1/project1/Pages/Photospage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGhvdG9zcGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sandhya/source/repos/project1/project1/Pages/Postspage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdHNwYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Sandhya/source/repos/project1/project1/Pages/Table.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sandhya/source/repos/project1/project1/Pages/Todospage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9kb3NwYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Sandhya/source/repos/project1/project1/Pages/Userspage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNwYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Sandhya/source/repos/project1/project1/Pages/Weather.razor]

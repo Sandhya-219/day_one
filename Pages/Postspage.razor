@@ -1,0 +1,47 @@
+﻿@page "/posts"
+@using project1.Pages
+@inject HttpClient http
+<h3>Postspage</h3>
+
+<div class="table">
+    <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>User Id</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (posts == null || posts.Count == 0)
+        {
+            <tr>
+                <td colspan="3">Loading...</td>
+            </tr>
+        }
+        else
+        {
+            @foreach (var post in posts)
+            {
+                <tr>
+                    <td>@post.userId</td>
+                    <td>@post.id</td>
+                    <td>@post.title</td>
+                    <td>@post.body</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+</div>
+
+@code {
+    public List<Posts> posts { get; set; } = new List<Posts>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await http.GetFromJsonAsync<List<Posts>>("Posts");
+    }
+
+}
