@@ -9,7 +9,8 @@
         public required string phone { get; set; }
         public required string website { get; set; }
 
-        
+        public required Address Address { get; set; }
+        public required Company Company { get; set; }
                
 
     }

@@ -4,35 +4,37 @@
 
 <h3>Albumspage</h3>
 
-<div class="table">
-    <table class="table table-bordered table-striped">
-        <thead class="table-dark">
-        <tr>
-            <th>User Id</th>
-            <th>Id</th>
-            <th>Title</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="container">
+    <div class="row">
         @if (albums == null || albums.Count == 0)
         {
-            <tr>
-                <td colspan="3">Loading...</td>
-            </tr>
+            <p>Loading...</p>
         }
         else
         {
             @foreach (var album in albums)
             {
-                <tr>
-                    <td>@album.userId</td>
-                    <td>@album.id</td>
-                    <td>@album.title</td>
-                </tr>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+
+                        <div class="bg-secondary text-white d-flex align-items-center justify-content-center" style="height:150px;">
+                            Album
+                        </div>
+                                                
+                        <div class="card-body">
+                            <h6 class="card-title">@album.title</h6>
+                        </div>
+                                               
+                        <div class="card-footer text-muted d-flex justify-content-between">
+                            <span>User: @album.userId</span>
+                            <span>ID: @album.id</span>
+                        </div>
+
+                    </div>
+                </div>
             }
         }
-    </tbody>
-</table>
+    </div>
 </div>
 @code {
     public List<Albums> albums { get; set; } = new List<Albums>();

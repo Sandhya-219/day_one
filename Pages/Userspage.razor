@@ -11,8 +11,18 @@
             <th>Name</th>
             <th>User Name</th>
             <th>Email</th>
+            <th>Street</th>
+            <th>Suite</th>
+            <th>City</th>
+            <th>Zipcode</th>
+            <th>Lat</th>
+            <th>Lng</th>
             <th>Phone</th>
             <th>Website</th>
+            <th>Company Name</th>
+            <th>Catch Phrase</th>
+            <th>Bs</th>
+
         </tr>
     </thead>
     <tbody>
@@ -31,8 +41,17 @@
                     <td>@user.name</td>
                     <td>@user.userName</td>
                     <td>@user.email</td>
+                    <td>@user.Address.street</td>
+                    <td>@user.Address.suite</td>
+                    <td>@user.Address.city</td>
+                    <td>@user.Address.zipCode</td>
+                    <td>@user.Address.Geo.lat</td>
+                    <td>@user.Address.Geo.lng</td>
                     <td>@user.phone</td>
                     <td>@user.website</td>
+                    <td>@user.Company.companyName</td>
+                    <td>@user.Company.catchPhrase</td>
+                    <td>@user.Company.bs</td>
                 </tr>
             }
         }
@@ -51,6 +70,3 @@
 }
 
 
-@code {
-
-}
